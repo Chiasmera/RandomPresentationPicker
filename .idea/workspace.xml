@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb329791-bbe8-4134-a4ea-22c8f67b1c78" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RandomPresentationPicker.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Model/StudentTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/ControllerInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Storage/Storage.java" afterDir="false" />
+    <list default="true" id="eb329791-bbe8-4134-a4ea-22c8f67b1c78" name="Changes" comment="Working base Classes">
+      <change afterPath="$PROJECT_DIR$/src/GUI/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/MainWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/PresentationTab.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/StudentsTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RandomPresentationPicker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RandomPresentationPicker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/ControllerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/ControllerInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -55,7 +52,10 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true"
+    "create.test.in.the.same.root": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -67,8 +67,8 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GUI.Main" />
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GUI.App" />
       <module name="RandomPresentationPicker" />
       <extension name="coverage">
         <pattern>
@@ -128,6 +128,14 @@
       <option name="presentableId" value="Default" />
       <updated>1669127272259</updated>
     </task>
+    <task id="LOCAL-00001" summary="Working base Classes">
+      <created>1669131476174</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669131476174</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,5 +148,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Working base Classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working base Classes" />
   </component>
 </project>

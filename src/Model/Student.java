@@ -52,4 +52,16 @@ public class Student {
     public double calculateReliability () {
         return 100.0 / timesAsked * timesPresented;
     }
+
+    @Override
+    public String toString() {
+        double reliability = calculateReliability();
+        String returnString;
+        if (reliability > 0.0) {
+            returnString = name + " (" + String.format("%.2f", reliability) + ")";
+        } else {
+            returnString = name;
+        }
+        return returnString;
+    }
 }

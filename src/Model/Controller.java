@@ -3,6 +3,8 @@ package Model;
 import GUI.ControllerInterface;
 import Storage.Storage;
 
+import java.util.List;
+
 public class Controller implements ControllerInterface {
     //Fields ------------------------------------------------------------
     private Storage storage;
@@ -38,5 +40,18 @@ public class Controller implements ControllerInterface {
     @Override
     public void studentHasPresented(Student student) {
         student.incrementPresented();
+    }
+
+    public List<Student> getAllStudents () {
+        return storage.getStudentList();
+    }
+
+    public void initContent() {
+        Student s1 = createStudent("Julius");
+        Student s2 =createStudent("Peter");
+        Student s3 =createStudent("Kristoffer");
+        Student s4 =createStudent("Anujan");
+
+
     }
 }
