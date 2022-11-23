@@ -5,6 +5,7 @@ public class Student {
     private String name;
     private int timesPresented;
     private int timesAsked;
+    private boolean blacklistedThisSession;
 
     //Constructors ------------------------------------------------------
 
@@ -12,6 +13,7 @@ public class Student {
         this.name = name;
         this.timesPresented = 0;
         this.timesAsked = 0;
+        this.blacklistedThisSession = false;
     }
 
 
@@ -40,6 +42,21 @@ public class Student {
      */
     public void incrementAsked () {
         timesAsked++;
+    }
+
+    /**
+     * Returna a boolean representing the students blacklist status
+     * @return Returns true if this student should not present any more this session
+     */
+    public boolean getBlacklistStatus () {
+        return blacklistedThisSession;
+    }
+
+    /**
+     * Blacklists a student from presenting any more this session
+     */
+    public void blacklist () {
+        blacklistedThisSession = true;
     }
 
 
