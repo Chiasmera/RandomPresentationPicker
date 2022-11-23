@@ -2,6 +2,7 @@ package GUI;
 
 import Model.Controller;
 import Model.Student;
+import javafx.beans.value.ChangeListener;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
@@ -22,7 +23,9 @@ private Controller controller;
         this.setPadding(new Insets(20));
 
         lwStudents = new ListView<>();
-        this.setLeft(lwStudents);
+        this.setCenter(lwStudents);
+        ChangeListener<Student> studentListener = (ov, o, n) -> this.studentSelectionChanged();
+        lwStudents.getSelectionModel().selectedItemProperty().addListener(studentListener);
 
         btnNewStudent = new Button("New Student");
         btnNewStudent.setMaxWidth(Double.MAX_VALUE);
@@ -35,6 +38,7 @@ private Controller controller;
         VBox vbxButtons = new VBox(btnNewStudent, btnRemoveStudent);
         vbxButtons.setSpacing(15);
         this.setRight(vbxButtons);
+        BorderPane.setMargin(vbxButtons, new Insets(0,0,0,15));
 
     }
 
@@ -59,13 +63,22 @@ private Controller controller;
 
     }
 
-    public void newStudentAction () {
-        //TODO
+    private void newStudentAction () {
+        CreateStudentWindow createStudentWindow = new CreateStudentWindow("New Student");
+        createStudentWindow.showAndWait();
+
+        updateControls();
     }
 
-    public void removeStudentAction () {
+    private void removeStudentAction () {
         if (lwStudents.getSelectionModel().getSelectedItem() != null) {
             controller.removeStudent(lwStudents.getSelectionModel().getSelectedItem());
         }
+
+        updateControls();
+    }
+
+    private void studentSelectionChanged() {
+
     }
 }
