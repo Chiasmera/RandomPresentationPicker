@@ -16,6 +16,12 @@ public class Student {
         this.blacklistedThisSession = false;
     }
 
+    public  Student(String name, int timesPresented, int timesAsked) {
+        this.name = name;
+        this.timesPresented = timesPresented;
+        this.timesAsked = timesAsked;
+    }
+
 
     //Methods - Get, Set & Add -------------------------------------------
     public String getName() {
@@ -48,7 +54,7 @@ public class Student {
      * Returna a boolean representing the students blacklist status
      * @return Returns true if this student should not present any more this session
      */
-    public boolean getBlacklistStatus () {
+    public boolean isBlacklisted() {
         return blacklistedThisSession;
     }
 
@@ -67,7 +73,13 @@ public class Student {
      * @return a double, representing the percentage of times presented
      */
     public double calculateReliability () {
-        return 100.0 / timesAsked * timesPresented;
+        double returnvalue;
+        if (timesAsked < 1) {
+            returnvalue = 100.0;
+        } else {
+            returnvalue = 100.0 / timesAsked * timesPresented;
+        }
+        return returnvalue;
     }
 
     @Override
@@ -75,7 +87,7 @@ public class Student {
         double reliability = calculateReliability();
         String returnString;
         if (reliability > 0.0) {
-            returnString = name + " (" + String.format("%.2f", reliability) + ")";
+            returnString = name + " (" + String.format("%.1f", reliability) + "%)";
         } else {
             returnString = name;
         }

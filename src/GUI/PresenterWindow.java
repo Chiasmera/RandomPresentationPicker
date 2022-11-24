@@ -23,11 +23,13 @@ public class PresenterWindow extends Stage {
     //Fields ------------------------------------------------------------
     private ControllerInterface controller;
     private Student chosenStudent;
+    private boolean keepAsOption;
 
     //Constructors ------------------------------------------------------
     public PresenterWindow(String title, Student chosenStudent) {
         controller = new Controller();
         this.chosenStudent = chosenStudent;
+        keepAsOption = false;
 
 
         this.initStyle(StageStyle.UTILITY);
@@ -85,17 +87,27 @@ public class PresenterWindow extends Stage {
     }
 
     private void acceptAction() {
+        chosenStudent.incrementAsked();
+        chosenStudent.incrementPresented();
         this.close();
 
 
     }
 
     private void alwaysPassAction() {
+        chosenStudent.incrementAsked();
+        chosenStudent.blacklist();
         this.close();
 
     }
 
     private void tempPassAction() {
+        chosenStudent.incrementAsked();
+        keepAsOption = true;
         this.close();
+    }
+
+    public boolean getKeepAsOption () {
+        return keepAsOption;
     }
 }

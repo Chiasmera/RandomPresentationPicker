@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb329791-bbe8-4134-a4ea-22c8f67b1c78" name="Changes" comment="Student list done">
-      <change afterPath="$PROJECT_DIR$/src/GUI/PresenterWindow.java" afterDir="false" />
+    <list default="true" id="eb329791-bbe8-4134-a4ea-22c8f67b1c78" name="Changes" comment="Randompicker ready">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/PresentationTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/PresentationTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/PresenterWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/PresenterWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Storage/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Storage/Storage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669219792731</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Randompicker ready">
+      <created>1669227658836</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669227658836</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,6 +169,7 @@
     <MESSAGE value="Working base Classes" />
     <MESSAGE value="Simple GUI" />
     <MESSAGE value="Student list done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Student list done" />
+    <MESSAGE value="Randompicker ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="Randompicker ready" />
   </component>
 </project>
